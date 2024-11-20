@@ -10,6 +10,7 @@ buttonElement.addEventListener('click',()=>{
         bodyElement.classList.add('night');
         buttonElement.style.backgroundColor = "#151B54";
         icon.href = './images/moon.png';
+        iconElement.style.color = "#fff";
     }
     else{
         iconElement.classList.remove('fa-moon');
@@ -18,5 +19,6 @@ buttonElement.addEventListener('click',()=>{
         bodyElement.classList.add('morning');
         buttonElement.style.backgroundColor = "#9BD4D0";
         icon.href = './images/sun.png';
+        iconElement.style.color = "yellow";
     }
 });
