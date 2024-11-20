@@ -1,0 +1,106 @@
+*{
+    
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 80%;
+    max-width: 150px;
+    height: 150px;   
+    border-radius: 20px;
+    overflow: hidden;
+}
+button{
+    width: 100%;
+    height: 100%;
+    background-color: #9BD4D0;
+    cursor: pointer;
+    border: none;
+}
+i{
+    font-size: 50px;
+}
+.morning{
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    /* background-size: middle; */
+    box-shadow: 20px 20px 10px gray;
+    animation: sliderday 15s linear infinite;
+}
+@keyframes sliderday{
+    0%{
+        background-image: url(../images/Day1-l.png);
+    }
+    30%{
+        background-image: url(../images/Day2-l.png);
+    }
+    60%{
+        background-image: url(../images/Day3-l.png);
+    }
+    100%{
+        background-image: url(../images/Day4-l.png);
+    }
+}
+@keyframes sliderdaysmall{
+    0%{
+        background-image: url(../images/Day1.jpeg);
+    }
+    30%{
+        background-image: url(../images/Day2.jpeg);
+    }
+    60%{
+        background-image: url(../images/Day3.jpeg);
+    }
+    100%{
+        background-image: url(../images/Day4.jpeg);
+    }
+}
+.night{
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    box-shadow: 20px 20px 10px gray;
+    animation: slidernight 20s linear infinite;
+}
+@keyframes slidernight{
+    0%{
+        background-image: url(../images/Night1-l.png);
+    }
+    30%{
+        background-image: url(../images/Night2-l.png);
+    }
+    60%{
+        background-image: url(../images/Night3-l.png);
+    }
+    100%{
+        background-image: url(../images/Night4-l.png);
+    }
+}
+ @keyframes slidernightsmall{
+    0%{
+        background-image: url(../images/Night1.jpeg);
+    }
+    30%{
+        background-image: url(../images/Night2.jpeg);
+    }
+    60%{
+        background-image: url(../images/Night3.jpeg);
+    }
+    100%{
+        background-image: url(../images/Night4.jpeg);
+    }
+}
+@media screen and (max-width:400px){
+    .night{
+        animation: slidernightsmall 20s linear infinite;
+    }
+    .morning{
+        animation: sliderdaysmall 20s linear infinite;
+    }
+}
