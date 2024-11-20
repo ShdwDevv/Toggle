@@ -96,7 +96,7 @@ i{
         background-image: url(../images/Night4.jpeg);
     }
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:600px){
     .night{
         animation: slidernightsmall 20s linear infinite;
     }
